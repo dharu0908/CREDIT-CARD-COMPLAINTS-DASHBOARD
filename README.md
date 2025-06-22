@@ -1,67 +1,81 @@
-# Credit Card Complaints Dashboard
+# 🧮 Tableau Dashboard: Banking KPIs & Employee Analytics
 
-This project features an interactive Tableau dashboard that explores credit card-related customer complaints in the United States. The goal is to provide a clear overview of complaint trends, company responses, and issue types over time.
+## 📊 Overview
 
----
-
-## Dashboard Overview
-
-The dashboard highlights:
-
-- **Total Complaints** over the entire dataset, along with a 12-month rolling average
-- **Timely Responses** from companies, including the percentage of complaints resolved promptly
-- **In-Progress Cases**, giving visibility into unresolved issues
-- **Complaint Trends Over Time**, displayed weekly to show volume fluctuations
-- **Geographical Breakdown** using a filled map of the U.S. to visualize complaint distribution by state
-- **Top Complaint Issues**, ranked by volume
-- **Company Response Types**, showing how complaints were addressed
-- **Daily Complaints Heatmap**, providing insight into day-wise complaint frequency
+This Tableau dashboard provides interactive insights into key performance indicators (KPIs) across banking services and HR metrics. It includes filters, visual breakdowns by demographics and tenure, and an **export functionality** for end-user convenience.
 
 ---
 
-## Filters Available
+## ✅ Features
 
-Users can interact with the dashboard using the following filters:
-- Year
-- Company
-- State
+### 📌 KPIs Tracked
+- Total Bank Deposits
+- Total Bank Loans
+- Number of Checking Accounts
+- Number of Savings Accounts
+- Employee Attrition Count
+- Attrition Rate
+- Active Employees
 
-These allow for focused analysis based on specific timeframes, regions, or organizations.
+### 📈 Visualizations
+- **Pie Charts**:
+  - Customer Segmentation: High / Medium / Low
+  - Nationality Distribution
+- **Bar & Line Charts**:
+  - KPI Trends Over Time
+- **Heatmaps**:
+  - Attrition by Department
 
----
+### 🔍 Filters
+- **Gender** (Male / Female)
+- **Joined Year**
+- **Income Band**
+- **Nationality**
+- **Department**
+- **Attrition Status**
+- **Account Type**
 
-## Preview
-
-![Credit Card Complaints Dashboard](credit_card_complaints_dashboard.png)
-
----
-
-## File Included
-
-- `credit_card_complaints_dashboard.twbx`: Tableau Packaged Workbook that includes all visualizations and data
-
----
-
-## Tools Used
-
-- Tableau Desktop
-- Excel (data source)
-- Mapbox (for U.S. filled map)
-
----
-
-## Use Case
-
-This dashboard can be useful for:
-- Analyzing service quality in the financial sector
-- Understanding customer pain points
-- Identifying trends across states and companies
-- Supporting decision-making in customer experience teams
+### 📤 Export Button
+- Users can download:
+  - Full Dashboard as PDF
+  - Individual Data Sheets (CSV)
+- Implemented via **URL Action** or **Extension**
 
 ---
 
-            
+## 🚀 How to Use
+
+### 1. View Dashboard
+Visit the published Tableau Public link or embedded view.
+
+### 2. Apply Filters
+Use filter panels to drill down into demographics, accounts, or employee data.
+
+### 3. Export Data
+Click the **Export** button on the dashboard to:
+- Download the full dashboard as a **PDF**
+- Export specific data tables as **CSV**
+
+> If the export doesn't work, ensure:
+> - You're logged into Tableau Public
+> - Pop-up blockers are disabled
+> - The original author enabled download permission
 
 ---
 
-Thanks for checking it out!
+## 🛠️ Tech Stack
+
+- **Tableau Desktop** for visualization development
+- **Tableau Public** for publishing
+- **Custom Dashboard Buttons** for navigation and export
+- Optional: **JavaScript API** or **Tableau Extensions** for advanced export
+
+---
+
+## 📎 How Export Button Works
+
+### Option 1: URL Action for PDF Export
+
+1. Create a **Dashboard Button or Image**
+2. Add **Dashboard Action → URL Action**
+3. Use this URL pattern:
